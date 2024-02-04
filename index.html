@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="nav_logo">
+                <img src="./Assets/logo.jpg" alt="logo">
+                <p>News</p>
+            </div>
+            <ul class="nav_menu">
+                    <li>Home</li>
+                    <li>Cricket</li>
+                    <li>Finance</li>
+                    <li>Technology</li>
+             </ul>
+             <div class="search_bar">
+                <input type="text" class="news_input">
+                <button class="search_button">Search</button> 
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Part -->
+    <main>
+           <div id="cards_container">
+
+           </div>
+    </main>
+
+    <template id="template_news_card">
+        <div class="card">
+            <div class="card_header">
+                <img src="./Assets/logo.jpg" alt="img" id="news_img">
+            </div>
+            <div class="card_content">
+                <h3 id="news_title">This is Title</h3>
+                <h5 id="news_source">Date</h5>
+                <p id="news_desc">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Dolor non saepe sapiente praesentium consectetur 
+                    nobis. Quidem, corporis. A obcaecati, 
+                    quia itaque, laborum dolorum quis reprehenderit 
+                    sapiente natus beatae, dolor accusamus.</p>
+            </div>
+    </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
