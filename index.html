@@ -16,14 +16,14 @@
                 <p>News</p>
             </div>
             <ul class="nav_menu">
-                    <li>Home</li>
-                    <li>Cricket</li>
-                    <li>Finance</li>
-                    <li>Technology</li>
+                    <li class="nav_item" id="Home" onclick="reload()">Home</li>
+                    <li class="nav_item" id="Cricket" onclick="onNavItemClick('Cricket')">Cricket</li>
+                    <li class="nav_item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                    <li class="nav_item" id="Technology" onclick="onNavItemClick('Technology')">Technology</li>
              </ul>
              <div class="search_bar">
-                <input type="text" class="news_input">
-                <button class="search_button">Search</button> 
+                <input type="text" class="news_input" id="news_input">
+                <button id="search_button" class="search_button">Search</button> 
             </div>
         </div>
     </nav>

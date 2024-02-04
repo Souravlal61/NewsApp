@@ -42,4 +42,47 @@ function fillDataInCard(cardClone , article){
     //  });
 
     newsSource.innerHTML = `${article.source.name}`;
+    cardClone.firstElementChild.addEventListener('click' , ()=>{
+        window.open(article.url,"_blank")
+    })
 }
+
+ let curSelectedNav = null;
+function onNavItemClick(id){ 
+    fetchNews(id);
+    const navItem = document.getElementById(id);
+    curSelectedNav?.classList.remove('active');
+    curSelectedNav = navItem;
+    curSelectedNav.classList.add('active');
+
+}
+
+const searchButton = document.getElementById('search_button');
+const searchText = document.getElementById('news_input');
+
+searchButton.addEventListener('click',()=>{
+    const query = searchText.value;
+    if (!query) return;
+    fetchNews(query);
+    curSelectedNav?.classList.remove('active');
+    curSelectedNav = null;
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
